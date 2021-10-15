@@ -7,6 +7,7 @@ public class Person {
 	// get, set 메소드로 변수에 접근
 	void setName(String name) {
 		this.name = name;
+		//this는 본인 클래스의 객체를 가르킴
 	}
 	String getName() {
 		return name;
