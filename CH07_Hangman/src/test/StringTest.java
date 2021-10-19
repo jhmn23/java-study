@@ -10,8 +10,7 @@ public class StringTest {
 		
 		System.out.println(text);
 		
-		
-		StringBuilder sb1 =new StringBuilder();
+		StringBuilder sb1 = new StringBuilder();
 		
 		sb1.append("I ");
 		sb1.append("have ");
@@ -26,7 +25,7 @@ public class StringTest {
 		sb2.append("have ").append("a ").append(animal);
 		
 		System.out.println(sb2);
-		
+
 	}
 
 }
