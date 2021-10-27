@@ -20,7 +20,7 @@ public class Ex2 {
 			}
 		}
 		
-		System.out.println("ÃÑÇÕÀº : "+total);
+		System.out.println("ì´í•©ì€ : "+total);
 		
 	}
 

@@ -3,7 +3,7 @@ package application;
 public class For {
 
 	public static void main(String[] args) {
-		// for ¹İº¹¹® for(ÃÊ±â°ª;Á¶°Ç;Áõ°¨){ ¸í·É¹®; }
+		// for ë°˜ë³µë¬¸ for(ì´ˆê¸°ê°’;ì¡°ê±´;ì¦ê°){ ëª…ë ¹ë¬¸; }
 		
 		for(int i=0; i<3; i++) {
 			System.out.println("i: "+i);
@@ -16,9 +16,9 @@ public class For {
 		}
 		System.out.println(total);
 		
-		/* ¿©·¯ÁÙ ÁÖ¼®
+		/* ì—¬ëŸ¬ì¤„ ì£¼ì„
 		for(;;) {
-			System.out.println("¹«ÇÑ¹İº¹");
+			System.out.println("ë¬´í•œë°˜ë³µ");
 		}
 		*/
 		

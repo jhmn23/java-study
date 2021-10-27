@@ -3,15 +3,15 @@ package application;
 public class If {
 
 	public static void main(String[] args) {
-		// IF ¹®
+		// IF ë¬¸
 		int apples = 5;
 		int bananas = 10;
 		
 		if(apples > bananas) {
-			System.out.println("»ç°ú°¡ ¹Ù³ª³ªº¸´Ù ¸¹À½");
+			System.out.println("ì‚¬ê³¼ê°€ ë°”ë‚˜ë‚˜ë³´ë‹¤ ë§ìŒ");
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 		
 		
 	}

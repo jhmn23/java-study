@@ -3,19 +3,19 @@ package application;
 public class Break {
 
 	public static void main(String[] args) {
-		// ¹İº¹¹® ¾È¿¡¼­ ºüÁ®³ª¿À´Â ¸í·É¾î break;
+		// ë°˜ë³µë¬¸ ì•ˆì—ì„œ ë¹ ì ¸ë‚˜ì˜¤ëŠ” ëª…ë ¹ì–´ break;
 		int count = 0;
 
 		while(true) {
-			System.out.println("Çï·Î¿ì~ "+count);
+			System.out.println("í—¬ë¡œìš°~ "+count);
 			
 			if(count == 5) break;
 			
-			System.out.println("ÇÏ¿ÍÀ¯?");
+			System.out.println("í•˜ì™€ìœ ?");
 			count++;
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 		
 	}
 

@@ -1,7 +1,7 @@
 package abstractClass;
 
-//abstract Å°¿öµå¸¦ class¾Õ¿¡ ºÙÀÌ¸é Ãß»ó Å¬·¡½º
-//Ãß»óÅ¬·¡½º´Â °´Ã¼¸¦ ¸¸µé ¼ö ¾ø´Ù.
+//abstract í‚¤ì›Œë“œë¥¼ classì•ì— ë¶™ì´ë©´ ì¶”ìƒ í´ë˜ìŠ¤
+//ì¶”ìƒí´ë˜ìŠ¤ëŠ” ê°ì²´ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ë‹¤.
 public abstract class GameObject {
-	public abstract void describe(); //Ãß»ó¸Ş¼Òµå´Â ÀÌ¸§¸¸ ÀÖ°í ÄÚµåºí·ÏÀÌ ¾øÀ½
+	public abstract void describe(); //ì¶”ìƒë©”ì†Œë“œëŠ” ì´ë¦„ë§Œ ìˆê³  ì½”ë“œë¸”ë¡ì´ ì—†ìŒ
 }

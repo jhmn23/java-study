@@ -3,11 +3,11 @@ package getterSetter;
 public class App {
 
 	public static void main(String[] args) {
-		// Á¢±ÙÁ¦¾îÀÚ private´Â °°Àº Å¬·¡½º¿¡¼­¸¸ Á¢±Ù°¡´É		
+		// ì ‘ê·¼ì œì–´ì privateëŠ” ê°™ì€ í´ë˜ìŠ¤ì—ì„œë§Œ ì ‘ê·¼ê°€ëŠ¥		
 		Person p1 = new Person();
-		//p1.name = "Æë¼ö"; ¿¡·¯
-		//p1.age = 7; ¿¡·¯
-		p1.setName("Æë¼ö");
+		//p1.name = "í­ìˆ˜"; ì—ëŸ¬
+		//p1.age = 7; ì—ëŸ¬
+		p1.setName("í­ìˆ˜");
 		p1.setAge(7);
 		System.out.println(p1.getName());
 		System.out.println(p1.getAge());

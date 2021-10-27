@@ -11,23 +11,23 @@ import javax.swing.JOptionPane;
 class Alert extends TimerTask {
 	@Override
 	public void run() {
-		System.out.println("°è¶õ »î´Â Áß");
+		System.out.println("ê³„ë€ ì‚¶ëŠ” ì¤‘");
 	}
 }
 
 class Task implements Runnable {
 	@Override
 	public void run() {
-		JOptionPane.showMessageDialog(null, "°è¶õ »î±â ¿Ï·á");
+		JOptionPane.showMessageDialog(null, "ê³„ë€ ì‚¶ê¸° ì™„ë£Œ");
 	}
 }
 
 public class App {
 	public static void main(String[] args) {
 		Timer timer = new Timer();
-		timer.scheduleAtFixedRate(new Alert(), 5000, 5000); //ÇÒÀÏ:run(), 0ÃÊµÚ ½ÇÇà, ¹İº¹ 1ÃÊ
+		timer.scheduleAtFixedRate(new Alert(), 5000, 5000); //í• ì¼:run(), 0ì´ˆë’¤ ì‹¤í–‰, ë°˜ë³µ 1ì´ˆ
 		
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-		executor.scheduleAtFixedRate(new Task(), 30, 30, TimeUnit.SECONDS); //ÇÒÀÏ,µô·¹ÀÌ,¹İº¹½Ã°£,½Ã°£Å¸ÀÔ	
+		executor.scheduleAtFixedRate(new Task(), 30, 30, TimeUnit.SECONDS); //í• ì¼,ë”œë ˆì´,ë°˜ë³µì‹œê°„,ì‹œê°„íƒ€ì…	
 	}
 }

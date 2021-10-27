@@ -8,13 +8,13 @@ public class App {
 		
 		int number = 25;
 		int result = calc.square(number);
-		System.out.printf("%d ÀÇ Á¦°öÀº %d ÀÌ´Ù.\n", number, result);
+		System.out.printf("%d ì˜ ì œê³±ì€ %d ì´ë‹¤.\n", number, result);
 		
 		result = calc.plus(10, 10);
-		System.out.printf("µÎ ¼öÀÇ ÇÕÀº %d ÀÌ´Ù.\n", result);
+		System.out.printf("ë‘ ìˆ˜ì˜ í•©ì€ %d ì´ë‹¤.\n", result);
 		
 		result = calc.minus(10, 10);
-		System.out.printf("µÎ ¼öÀÇ Â÷´Â %d ÀÌ´Ù.", result);
+		System.out.printf("ë‘ ìˆ˜ì˜ ì°¨ëŠ” %d ì´ë‹¤.", result);
 		
 	}
 

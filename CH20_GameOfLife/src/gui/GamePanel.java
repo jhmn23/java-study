@@ -9,43 +9,43 @@ import java.awt.event.MouseEvent;
 public class GamePanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	private final static int CELLSIZE = 100; // °İÀÚÀÇ Å©±â¼³Á¤
-	private final static Color backgroundColor = Color.BLACK; // ¹è°æ °ËÀº»ö
-	private final static Color gridColor = Color.GRAY; // °İÀÚ¼±»ö È¸»ö
+	private final static int CELLSIZE = 10; // ê²©ìì˜ í¬ê¸°ì„¤ì •
+	private final static Color backgroundColor = Color.BLACK; // ë°°ê²½ ê²€ì€ìƒ‰
+	private final static Color gridColor = Color.GRAY; // ê²©ìì„ ìƒ‰ íšŒìƒ‰
 
-	private int topBottomMargin; // À§ ¾Æ·¡ ¸¶Áø
-	private int leftRightMargin; // ÁÂ ¿ì ¸¶Áø
-	private World world; // ¿ùµå ¼±¾ğ
+	private int topBottomMargin; // ìœ„ ì•„ë˜ ë§ˆì§„
+	private int leftRightMargin; // ì¢Œ ìš° ë§ˆì§„
+	private World world; // ì›”ë“œ ì„ ì–¸
 
 	public GamePanel() {
-		// °ÔÀÓÆĞ³ÎÀ» »ı¼º½Ã¿¡ ÀÌº¥Æ®Áß(¸¶¿ì½º ÀÌº¥Æ® Ãß°¡)
+		// ê²Œì„íŒ¨ë„ì„ ìƒì„±ì‹œì— ì´ë²¤íŠ¸ì¤‘(ë§ˆìš°ìŠ¤ ì´ë²¤íŠ¸ ì¶”ê°€)
 		addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
-				
-				if(e.getY() < topBottomMargin || e.getX() < leftRightMargin) {
-					return; //¹ş¾î³­ °ªÀÌ±â ¶§¹®¿¡ ±×³É ¸®ÅÏ
+
+				if (e.getY() < topBottomMargin || e.getX() < leftRightMargin) {
+					return; // ë²—ì–´ë‚œ ê°’ì´ê¸° ë•Œë¬¸ì— ê·¸ëƒ¥ ë¦¬í„´
 				}
-				
+
 				int row = (e.getY() - topBottomMargin) / CELLSIZE;
 				int col = (e.getX() - leftRightMargin) / CELLSIZE;
-				
-				if(row >= world.getRows() || col >= world.getColumns()) {
-					return; //¹ş¾î³­ °ªÀÌ±â ¶§¹®¿¡ ±×³É ¸®ÅÏ
+
+				if (row >= world.getRows() || col >= world.getColumns()) {
+					return; // ë²—ì–´ë‚œ ê°’ì´ê¸° ë•Œë¬¸ì— ê·¸ëƒ¥ ë¦¬í„´
 				}
 				boolean status = world.getCell(row, col);
-				world.setCell(row, col, !status); // ÇöÀç ³ì»öÀÎÁö Ã¼Å©ÇØ¼­ ¹İÀü
-				repaint(); // »õ·Î°íÄ§(°ÔÀÓÆĞ³ÎÀ» »õ·Î½ÃÀÛ)
+				world.setCell(row, col, !status); // í˜„ì¬ ë…¹ìƒ‰ì¸ì§€ ì²´í¬í•´ì„œ ë°˜ì „
+				repaint(); // ìƒˆë¡œê³ ì¹¨(ê²Œì„íŒ¨ë„ì„ ìƒˆë¡œì‹œì‘)
 			}
 		});
 	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
-		// ÀÌ ¸Ş¼Òµå´Â ÀÚµ¿À¸·Î ½ÃÀÛ ¹× ¼öÁ¤ ½Ã ÀÚ½ÅÀÇ ¸ğ½ÀÀ» ±×¸°´Ù.
-		Graphics2D g2 = (Graphics2D) g; // 2D ±×·¡ÇÈÀ» »ç¿ëÇÏ±â À§ÇØ
+		// ì´ ë©”ì†Œë“œëŠ” ìë™ìœ¼ë¡œ ì‹œì‘ ë° ìˆ˜ì • ì‹œ ìì‹ ì˜ ëª¨ìŠµì„ ê·¸ë¦°ë‹¤.
+		Graphics2D g2 = (Graphics2D) g; // 2D ê·¸ë˜í”½ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•´
 
-		int width = getWidth(); // °¡·Î±æÀÌ
-		int height = getHeight(); // ¼¼·Î±æÀÌ
+		int width = getWidth(); // ê°€ë¡œê¸¸ì´
+		int height = getHeight(); // ì„¸ë¡œê¸¸ì´
 
 		leftRightMargin = ((width % CELLSIZE) + CELLSIZE) / 2;
 		topBottomMargin = ((height % CELLSIZE) + CELLSIZE) / 2;
@@ -56,18 +56,22 @@ public class GamePanel extends JPanel {
 //		System.out.println(rows);
 //		System.out.println(cols);
 
-		if (world == null) { // ¾ÆÁ÷ world°¡ »ı¼ºµÇÁö ¾Ê¾ÒÀ¸¸é »õ·Î »ı¼º
+		if (world == null) { // ì•„ì§ worldê°€ ìƒì„±ë˜ì§€ ì•Šì•˜ìœ¼ë©´ ìƒˆë¡œ ìƒì„±
 			world = new World(rows, cols);
+		} else { //ì´ë¯¸ ì›”ë“œ ê°ì²´ê°€ ë§Œë“¤ì–´ì ¸ ìˆë‹¤ë©´ 
+			if(world.getRows() != rows || world.getColumns() != cols) {
+				world = new World(rows, cols); //ìƒˆë¡œ ë§Œë“¬(ë¦¬ì‚¬ì´ì¦ˆ)
+			}
 		}
 
-		//world.setCell(0, 0, true); // grid ÀÌÁß¹è¿­¿¡ ÁÂÇ¥(ÁÙ,¿­) °ªÀ» true·Î set
+		// world.setCell(0, 0, true); // grid ì´ì¤‘ë°°ì—´ì— ì¢Œí‘œ(ì¤„,ì—´) ê°’ì„ trueë¡œ set
 
-		g2.setColor(backgroundColor); // »ö ¼³Á¤
-		g2.fillRect(0, 0, width, height); // »ç°¢ÇüÀÇ ÁÂÇ¥¿¡ »öÀ» Ä¥ÇÔ
+		g2.setColor(backgroundColor); // ìƒ‰ ì„¤ì •
+		g2.fillRect(0, 0, width, height); // ì‚¬ê°í˜•ì˜ ì¢Œí‘œì— ìƒ‰ì„ ì¹ í•¨
 
-		drowGrid(g2, width, height); // ÁÙÀ» ±ß´Â ¸Ş¼Òµå
+		drowGrid(g2, width, height); // ì¤„ì„ ê¸‹ëŠ” ë©”ì†Œë“œ
 
-		// ÀüÃ¼ ±×¸®µå ¹è¿­¿¡¼­ ÇöÀç °ªÀ¸·Î »öÀ» ³Ö´Â´Ù.
+		// ì „ì²´ ê·¸ë¦¬ë“œ ë°°ì—´ì—ì„œ í˜„ì¬ ê°’ìœ¼ë¡œ ìƒ‰ì„ ë„£ëŠ”ë‹¤.
 		for (int col = 0; col < cols; col++) {
 			for (int row = 0; row < rows; row++) {
 				boolean status = world.getCell(row, col);
@@ -77,30 +81,51 @@ public class GamePanel extends JPanel {
 	}
 
 	private void fillCell(Graphics2D g2, int row, int col, boolean status) {
-		// »ç°¢Çü¿¡ »öÀ» ³Ö´Â ¸Ş¼Òµå(±×·¡ÇÈ°´Ã¼, °¡·ÎÁÙ, ¼¼·ÎÁÙ, »óÅÂ(true³ì»ö,false¹è°æ»ö))
-		Color color = status ? Color.GREEN : backgroundColor; // »ïÇ×¿¬»êÀÚ status°¡ true¸é ³ì»ö
+		// ì‚¬ê°í˜•ì— ìƒ‰ì„ ë„£ëŠ” ë©”ì†Œë“œ(ê·¸ë˜í”½ê°ì²´, ê°€ë¡œì¤„, ì„¸ë¡œì¤„, ìƒíƒœ(trueë…¹ìƒ‰,falseë°°ê²½ìƒ‰))
+		Color color = status ? Color.GREEN : backgroundColor; // ì‚¼í•­ì—°ì‚°ì statusê°€ trueë©´ ë…¹ìƒ‰
 		g2.setColor(color);
 
 		int x = leftRightMargin + (col * CELLSIZE);
 		int y = topBottomMargin + (row * CELLSIZE);
 
-		// x,yÁÂÇ¥ °¡·Î ¼¼·Î ±æÀÌ ÀÔ·ÂÇØ¼­ »ç°¢Çü¿¡ »öÀ» Ä¥ÇÑ´Ù.
+		// x,yì¢Œí‘œ ê°€ë¡œ ì„¸ë¡œ ê¸¸ì´ ì…ë ¥í•´ì„œ ì‚¬ê°í˜•ì— ìƒ‰ì„ ì¹ í•œë‹¤.
 		g2.fillRect(x + 1, y + 1, CELLSIZE - 1, CELLSIZE - 1);
 	}
 
 	private void drowGrid(Graphics2D g2, int width, int height) {
-		// °İÀÚ ÁÙÀ» ±ß´Â ¸Ş¼Òµå
-		g2.setColor(gridColor); // »ö ¼³Á¤ : È¸»ö
+		// ê²©ì ì¤„ì„ ê¸‹ëŠ” ë©”ì†Œë“œ
+		g2.setColor(gridColor); // ìƒ‰ ì„¤ì • : íšŒìƒ‰
 
 		for (int x = leftRightMargin; x <= width - leftRightMargin; x += CELLSIZE) {
-			// ÁÙÀ» ±ß´Â ¸Ş¼Òµå (x1,y1) (x2,y2)
+			// ì¤„ì„ ê¸‹ëŠ” ë©”ì†Œë“œ (x1,y1) (x2,y2)
 			g2.drawLine(x, topBottomMargin, x, height - topBottomMargin);
 		}
 		for (int y = topBottomMargin; y <= width - topBottomMargin; y += CELLSIZE) {
-			// ÁÙÀ» ±ß´Â ¸Ş¼Òµå (x1,y1) (x2,y2)
+			// ì¤„ì„ ê¸‹ëŠ” ë©”ì†Œë“œ (x1,y1) (x2,y2)
 			g2.drawLine(leftRightMargin, y, width - leftRightMargin, y);
 		}
 
+	}
+
+	public void randomize() {
+		// ì—”í„°í‚¤ë¥¼ ëˆŒë €ì„ë•Œ. => ëœë¤ìœ¼ë¡œ ê·¸ë¦¬ë“œ ìƒì„±
+		world.randomize();
+		// ë¦¬í”„ë ˆì‰¬
+		repaint();
+	}
+
+	public void clear() {
+		// ë°±ìŠ¤í˜ì´ìŠ¤ë¥¼ ëˆŒë €ì„ë•Œ => ëª¨ë“  ì…€ì„ falseë¡œ ê²€ì€ìƒ‰
+		world.clear();
+		// ë¦¬í”„ë ˆì‰¬
+		repaint();
+	}
+
+	public void next() {
+		// ìŠ¤í˜ì´ìŠ¤ë°”ë¥¼ ëˆŒë €ì„ë•Œ => ì£¼ë³€ ê·¸ë¦¬ë“œ Active
+		world.next();
+		// ë¦¬í”„ë ˆì‰¬
+		repaint();
 	}
 
 }

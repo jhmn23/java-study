@@ -2,23 +2,23 @@ package inner_Class;
 
 public class App implements Runnable {
 	
-	private String name = "¹ÌÅ°¸¶¿ì½º";
+	private String name = "ë¯¸í‚¤ë§ˆìš°ìŠ¤";
 	
 	public static void main(String[] args) {
 		new App().start();
 	}
 	
 	private void start() {
-		//activate ¸Ş¼Òµå ½ÇÇà¹æ¹ı
-		//1. AppÅ¬·¡½º¿¡ Runnable±¸Çö
+		//activate ë©”ì†Œë“œ ì‹¤í–‰ë°©ë²•
+		//1. Appí´ë˜ìŠ¤ì— Runnableêµ¬í˜„
 		activate(this);
-		//2. ÀÍ¸íÅ¬·¡½º
+		//2. ìµëª…í´ë˜ìŠ¤
 		activate(new Runnable() {
 			public void run() {
 				System.out.println(name);
 			}
 		});
-		//3. ÀÌ³ÊÅ¬·¡½º
+		//3. ì´ë„ˆí´ë˜ìŠ¤
 		class Runner1 implements Runnable {
 			public void run() {
 				System.out.println(name);
@@ -28,8 +28,8 @@ public class App implements Runnable {
 		
 	}
 
-	public void activate(Runnable runnable) { //RunnableÀÎÅÍÆäÀÌ½º ¸Å°³º¯¼ö
-		runnable.run(); //Ãß»ó¸Ş¼Òµå ½ÇÇà
+	public void activate(Runnable runnable) { //Runnableì¸í„°í˜ì´ìŠ¤ ë§¤ê°œë³€ìˆ˜
+		runnable.run(); //ì¶”ìƒë©”ì†Œë“œ ì‹¤í–‰
 	}
 
 	@Override

@@ -2,17 +2,17 @@ package timer_Example;
 
 import java.util.Timer;
 import java.util.TimerTask;
-//ÇÏ³ªÀÇ ÆÄÀÏ¿¡ ¿©·¯°³ÀÇ Å¬·¡½º¸¦ ¸¸µé¼ö ÀÖ´Ù. ±×·±µ¥ public class´Â ´ÜÇÏ³ªÀÌ°í ÆÄÀÏÀÇ ÀÌ¸§°ú °°´Ù
+//í•˜ë‚˜ì˜ íŒŒì¼ì— ì—¬ëŸ¬ê°œì˜ í´ë˜ìŠ¤ë¥¼ ë§Œë“¤ìˆ˜ ìˆë‹¤. ê·¸ëŸ°ë° public classëŠ” ë‹¨í•˜ë‚˜ì´ê³  íŒŒì¼ì˜ ì´ë¦„ê³¼ ê°™ë‹¤
 class Task extends TimerTask {
 	@Override
 	public void run() {
-		System.out.println("Çï·Î¿ì");
+		System.out.println("í—¬ë¡œìš°");
 	}
 }
 
 public class App {
 	public static void main(String[] args) {
 		Timer timer = new Timer();
-		timer.scheduleAtFixedRate(new Task(), 0, 1000); //ÇÒÀÏ:run(), 0ÃÊµÚ ½ÇÇà, ¹İº¹ 1ÃÊ
+		timer.scheduleAtFixedRate(new Task(), 0, 1000); //í• ì¼:run(), 0ì´ˆë’¤ ì‹¤í–‰, ë°˜ë³µ 1ì´ˆ
 	}
 }

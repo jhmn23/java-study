@@ -2,13 +2,13 @@ package game.objects;
 
 public class GameObject {
 	
-	private int id;		// °¡À§¹ÙÀ§º¸¸¦ À§ÇÑ id
-	private String name;// ÀÌ¸§
+	private int id;		// ê°€ìœ„ë°”ìœ„ë³´ë¥¼ ìœ„í•œ id
+	private String name;// ì´ë¦„
 	private int[][] comparison = {
-				//°¡À§   ¹ÙÀ§   º¸
-	/* °¡À§(0) */	{  0,  -1,   1 },
-	/* ¹ÙÀ§(1) */	{  1,   0,  -1 },
-	/* º¸ (2) */	{ -1,	1,   0 }
+				//ê°€ìœ„   ë°”ìœ„   ë³´
+	/* ê°€ìœ„(0) */	{  0,  -1,   1 },
+	/* ë°”ìœ„(1) */	{  1,   0,  -1 },
+	/* ë³´ (2) */	{ -1,	1,   0 }
 	};
 	
 	public int compare(GameObject ob) {

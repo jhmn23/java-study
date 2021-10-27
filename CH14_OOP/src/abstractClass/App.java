@@ -11,7 +11,7 @@ public class App {
 			obj.describe();
 		}
 		
-		//GameObject go = new GameObject(); Ãß»óÅ¬·¡½º´Â °´Ã¼¸¦ ¸ø¸¸µë
+		//GameObject go = new GameObject(); ì¶”ìƒí´ë˜ìŠ¤ëŠ” ê°ì²´ë¥¼ ëª»ë§Œë“¬
 	}
 
 }

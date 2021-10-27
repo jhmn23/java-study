@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Switch2 {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in); //½ºÄ³³Ê »ı¼º
+		Scanner scanner = new Scanner(System.in); //ìŠ¤ìºë„ˆ ìƒì„±
 		
-		System.out.print("°è¼Ó ÁøÇàÇÏ°Ú½À´Ï±î? (y/n): ");
-		String input = scanner.nextLine(); //½ºÄ³³Ê ¹®ÀÚ¿­ ÀÔ·Â
+		System.out.print("ê³„ì† ì§„í–‰í•˜ê² ìŠµë‹ˆê¹Œ? (y/n): ");
+		String input = scanner.nextLine(); //ìŠ¤ìºë„ˆ ë¬¸ìì—´ ì…ë ¥
 		scanner.close();
 		
 		switch(input) {
 		case "y":
-			System.out.println("ÁøÇàÇÕ´Ï´Ù.....");
+			System.out.println("ì§„í–‰í•©ë‹ˆë‹¤.....");
 			break;
 		case "n":
-			System.out.println("Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.");
 		}
 		
 	}

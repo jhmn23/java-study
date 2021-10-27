@@ -3,9 +3,9 @@ package application;
 public class LoopArray {
 
 	public static void main(String[] args) {
-		// for ¹İº¹¹®°ú ÀÎµ¦½º i¸¦ »ç¿ëÇØ ¹è¿­ÀÇ Ã¹¹øÂ°ºÎÅÍ ³¡±îÁö Ãâ·Â
+		// for ë°˜ë³µë¬¸ê³¼ ì¸ë±ìŠ¤ ië¥¼ ì‚¬ìš©í•´ ë°°ì—´ì˜ ì²«ë²ˆì§¸ë¶€í„° ëê¹Œì§€ ì¶œë ¥
 
-		String[] animals = { "°³", "°í¾çÀÌ", "´ß", "»çÀÚ", "¾ç"};
+		String[] animals = { "ê°œ", "ê³ ì–‘ì´", "ë‹­", "ì‚¬ì", "ì–‘"};
 
 		for (int i = 0; i < animals.length; i++) {
 			System.out.println(animals[i]);

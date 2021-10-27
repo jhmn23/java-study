@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CheckPassDoWhile {
 
 	public static void main(String[] args) {
-		// ÆĞ½º¿öµå¸¦ ÀÔ·Â¹Ş¾Æ do while¹®À¸·Î ¸Â´ÂÁö °Ë»ç ¸ÂÀ¸¸é ¹İº¹¹® ºüÁ®³ª¿È
+		// íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥ë°›ì•„ do whileë¬¸ìœ¼ë¡œ ë§ëŠ”ì§€ ê²€ì‚¬ ë§ìœ¼ë©´ ë°˜ë³µë¬¸ ë¹ ì ¸ë‚˜ì˜´
 		Scanner scanner = new Scanner(System.in);
 		
 		final String USER_PASSWORD = "hello";
@@ -13,13 +13,13 @@ public class CheckPassDoWhile {
 		
 		String password = "";
 		do {
-			System.out.print("ºñ¹Ğ¹øÈ£ ÀÔ·Â : ");
+			System.out.print("ë¹„ë°€ë²ˆí˜¸ ì…ë ¥ : ");
 			password = scanner.nextLine();
 			
-		} while (!password.equals(USER_PASSWORD)); // !´Â ¹İ´ë
+		} while (!password.equals(USER_PASSWORD)); // !ëŠ” ë°˜ëŒ€
 		
 		scanner.close();
-		System.out.println("Á¢¼Ó ½ÂÀÎ.");
+		System.out.println("ì ‘ì† ìŠ¹ì¸.");
 		
 	}
 

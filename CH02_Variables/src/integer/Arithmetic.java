@@ -3,7 +3,7 @@ package integer;
 public class Arithmetic {
 
 	public static void main(String[] args) {
-		// »ê¼ú¿¬»ê
+		// ì‚°ìˆ ì—°ì‚°
 		System.out.println(7+3.0);
 		
 		System.out.println(9/3);

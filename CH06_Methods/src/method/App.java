@@ -5,12 +5,12 @@ public class App {
 	public static void main(String[] args) {
 		Person p1 = new Person();
 		
-		System.out.println(p1.name); //ÂüÁ¶ ÀÚ·áÇü StringÀº null°ªÀÌ ÃÊ±â°ª
-		System.out.println(p1.age);  //int´Â 0 ÃÊ±â°ª
+		System.out.println(p1.name); //ì°¸ì¡° ìë£Œí˜• Stringì€ nullê°’ì´ ì´ˆê¸°ê°’
+		System.out.println(p1.age);  //intëŠ” 0 ì´ˆê¸°ê°’
 		
-		p1.sayHello(); //¸Ş¼Òµå È£Ãâ
+		p1.sayHello(); //ë©”ì†Œë“œ í˜¸ì¶œ
 		
-		p1.name = "Æë¼ö";
+		p1.name = "í­ìˆ˜";
 		p1.age = 7;
 		
 		System.out.println(p1.name); 
@@ -19,9 +19,9 @@ public class App {
 		p1.sayHello();
 		
 		Person p2 = new Person();
-		p2.name = "±æµ¿";
+		p2.name = "ê¸¸ë™";
 		Person p3 = new Person();
-		p3.name = "¶óÀÌ¾ğ";
+		p3.name = "ë¼ì´ì–¸";
 		
 		p2.sayHello();
 		p3.sayHello();

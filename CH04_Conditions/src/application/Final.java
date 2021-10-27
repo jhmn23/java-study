@@ -3,7 +3,7 @@ package application;
 public class Final {
 
 	public static void main(String[] args) {
-		// »ó¼ö Å°¿öµå final º¯ÇÏÁö ¾Ê´Â º¯¼ö, ÀÌ¸§À» ´ë¹®ÀÚ·Î ¸¸µë
+		// ìƒìˆ˜ í‚¤ì›Œë“œ final ë³€í•˜ì§€ ì•ŠëŠ” ë³€ìˆ˜, ì´ë¦„ì„ ëŒ€ë¬¸ìë¡œ ë§Œë“¬
 		final int VALUE = 9;
 		//VALUE = 10;
 		

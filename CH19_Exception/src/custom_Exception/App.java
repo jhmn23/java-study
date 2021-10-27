@@ -5,16 +5,16 @@ import custom_Exception.exception.TempTooLowException;
 
 public class App {
 	public static void main(String[] args) {
-		// ¿¹¿ÜÃ³¸®¸¦ ³Ñ±è
+		// ì˜ˆì™¸ì²˜ë¦¬ë¥¼ ë„˜ê¹€
 		Thermostat stat = new Thermostat();
 
 		try {
 			stat.setTemperature(40);
 		} catch (TempTooHighException e) {
-			// ¿Âµµ°¡ ³·À»°æ¿ì Ã³¸® ÄÚµå
+			// ì˜¨ë„ê°€ ë‚®ì„ê²½ìš° ì²˜ë¦¬ ì½”ë“œ
 			System.out.println(e.getMessage());
 		} catch (TempTooLowException e) {
-			// ¿Âµµ°¡ ³ôÀ»°æ¿ì Ã³¸® ÄÚµå
+			// ì˜¨ë„ê°€ ë†’ì„ê²½ìš° ì²˜ë¦¬ ì½”ë“œ
 			System.out.println(e.getMessage());
 		}
 	}

@@ -3,12 +3,12 @@ package InstanceVariable;
 public class App {
 
 	public static void main(String[] args) {
-		// °°Àº ÆĞÅ°ÁöÀÇ Person Å¬·¡½º´Â ¹Ù·Î ºÒ·¯¿Í¼­ »ç¿ë°¡´É
+		// ê°™ì€ íŒ¨í‚¤ì§€ì˜ Person í´ë˜ìŠ¤ëŠ” ë°”ë¡œ ë¶ˆëŸ¬ì™€ì„œ ì‚¬ìš©ê°€ëŠ¥
 		Person p1 = new Person();
-		p1.name = "Æë¼ö";
+		p1.name = "í­ìˆ˜";
 		p1.age = 7;
 		Person p2 = new Person();
-		p2.name = "±æµ¿";
+		p2.name = "ê¸¸ë™";
 		p2.age = 17;
 		
 		System.out.println(p1.name);

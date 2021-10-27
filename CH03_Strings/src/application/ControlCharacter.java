@@ -3,14 +3,14 @@ package application;
 public class ControlCharacter {
 
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­ ¾È¿¡ ÀÖ´Â Á¦¾î¹®ÀÚ
+		// ë¬¸ìì—´ ì•ˆì— ìˆëŠ” ì œì–´ë¬¸ì
 		System.out.println("=========================");
-		System.out.println("\tÅÇ\t¸¸Å­ ¶ç¿ó´Ï´Ù.");
+		System.out.println("\tíƒ­\të§Œí¼ ë„ì›ë‹ˆë‹¤.");
 		System.out.println("=========================");
-		System.out.println("ÀÚ¹Ù¸¦\n¹è¿ì°í\nÀÖ½À´Ï´Ù.");
+		System.out.println("ìë°”ë¥¼\në°°ìš°ê³ \nìˆìŠµë‹ˆë‹¤.");
 		
-		System.out.print("ÇÁ¸°Æ®´Â ");
-		System.out.print("ÁÙÀ» ¶ç¿ìÁö ¾Ê½À´Ï´Ù.");
+		System.out.print("í”„ë¦°íŠ¸ëŠ” ");
+		System.out.print("ì¤„ì„ ë„ìš°ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 	}
 
 }

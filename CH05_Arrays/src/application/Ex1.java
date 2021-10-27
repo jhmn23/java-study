@@ -7,26 +7,26 @@ public class Ex1 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		final int NUM = 5; // ¹è¿­ÀÇ Å©±â
+		final int NUM = 5; // ë°°ì—´ì˜ í¬ê¸°
 
 		int[] numbers = new int[NUM];
 
 		for (int i = 0; i < NUM; i++) {
-			System.out.print("¼ıÀÚ¸¦ ÀÔ·Â: ");
+			System.out.print("ìˆ«ìë¥¼ ì…ë ¥: ");
 			numbers[i] = scanner.nextInt();
 		}
 		
 		scanner.close();
 		
-		System.out.println("ÀÔ·ÂÇÑ °ªÀº : ");
+		System.out.println("ì…ë ¥í•œ ê°’ì€ : ");
 		
-		int total = 0; //¼ıÀÚÀÇ ÇÕÀ» °è»êÇÒ º¯¼ö
+		int total = 0; //ìˆ«ìì˜ í•©ì„ ê³„ì‚°í•  ë³€ìˆ˜
 		for(int i=0; i<NUM; i++) {
 			System.out.println(numbers[i]);
-			total = total + numbers[i]; //¹è¿­ÀÇ ¾ÆÀÌÅÛ ÇÏ³ªÇÏ³ªÀÇ °ªÀ» ´õÇÔ
+			total = total + numbers[i]; //ë°°ì—´ì˜ ì•„ì´í…œ í•˜ë‚˜í•˜ë‚˜ì˜ ê°’ì„ ë”í•¨
 		}
 		
-		System.out.println("ÇÕ°è : " +total);
+		System.out.println("í•©ê³„ : " +total);
 		
 	}
 

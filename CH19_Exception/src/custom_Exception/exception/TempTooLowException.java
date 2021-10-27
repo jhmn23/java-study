@@ -1,12 +1,12 @@
 package custom_Exception.exception;
 
-// ¿Âµµ°¡ ³Ê¹« ³·À» °æ¿ì ¹ß»ı½ÃÅ³ ¿¹¿Ü
+// ì˜¨ë„ê°€ ë„ˆë¬´ ë‚®ì„ ê²½ìš° ë°œìƒì‹œí‚¬ ì˜ˆì™¸
 public class TempTooLowException extends TempOutOfRangeException {
 	private static final long serialVersionUID = 1L;
 
 	public TempTooLowException(String message) {
-		//»ı¼ºÀÚ ¿¹¿Ü ¸Ş¼¼Áö¸¦ »óÀ§ ¿¹¿ÜÅ¬·¡½º¿¡ Ã³¸®
-		super(message); //¿¹¿ÜÅ¬·¡½º¿¡¼­ ¸Ş¼¼Áö¸íÀ¸·Î ¿¹¿Ü¸¦ »ı¼º
+		//ìƒì„±ì ì˜ˆì™¸ ë©”ì„¸ì§€ë¥¼ ìƒìœ„ ì˜ˆì™¸í´ë˜ìŠ¤ì— ì²˜ë¦¬
+		super(message); //ì˜ˆì™¸í´ë˜ìŠ¤ì—ì„œ ë©”ì„¸ì§€ëª…ìœ¼ë¡œ ì˜ˆì™¸ë¥¼ ìƒì„±
 	}
 	
 }

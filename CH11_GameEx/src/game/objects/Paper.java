@@ -1,9 +1,9 @@
 package game.objects;
-//º¸
+//ë³´
 public class Paper extends GameObject{
 	public Paper() {
-		// º¸ °´Ã¼ »ı¼º
+		// ë³´ ê°ì²´ ìƒì„±
 		setId(2);
-		setName("º¸");
+		setName("ë³´");
 	}
 }

@@ -3,14 +3,14 @@ package application;
 public class App {
 
 	public static void main(String[] args) {
-		// ¸ŞÀÎ¸Ş¼Òµå¿¡¼­ ÇÁ·Î±×·¥ ½ÃÀÛ
-		// ÀÚµ¿Á¤·Ä CTRL+SHIFT+F
+		// ë©”ì¸ë©”ì†Œë“œì—ì„œ í”„ë¡œê·¸ë¨ ì‹œì‘
+		// ìë™ì •ë ¬ CTRL+SHIFT+F
 		
-		System.out.println("¾È³çÇÏ¼¼¿ä");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”");
 
-		System.out.println("»õ ÀÚ¹Ù ÇÁ·Î±×·¥À»");
+		System.out.println("ìƒˆ ìë°” í”„ë¡œê·¸ë¨ì„");
 
-		System.out.println("½ÇÇàÇÕ´Ï´Ù.");
+		System.out.println("ì‹¤í–‰í•©ë‹ˆë‹¤.");
 
 	}
 

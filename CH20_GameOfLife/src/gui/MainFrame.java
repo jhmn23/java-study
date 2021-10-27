@@ -1,21 +1,43 @@
 package gui;
 
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.JFrame;
 
 public class MainFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private GamePanel gamePanel = new GamePanel();
-	
+
 	public MainFrame() {
-		super("Game of Life"); // Å¸ÀÌÆ²¸í
-		
-		setLayout(new BorderLayout()); // ·¹ÀÌ¾Æ¿ô ±¸¿ª¼³Á¤
-		add(gamePanel, BorderLayout.CENTER); // °ÔÀÓ ÆĞ³ÎÀ» °¡¿îµ¥
-		
-		setSize(800, 600); // Ã¢ »çÀÌÁî
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Ã¢À» ´İÀ»¶§ ÇÁ·Î±×·¥ Á¾·á
-		setVisible(true); // º¸ÀÌ°Ô ÇÏ±â
+		super("Game of Life"); // íƒ€ì´í‹€ëª…
+
+		setLayout(new BorderLayout()); // ë ˆì´ì•„ì›ƒ êµ¬ì—­ì„¤ì •
+		add(gamePanel, BorderLayout.CENTER); // ê²Œì„ íŒ¨ë„ì„ ê°€ìš´ë°
+
+		addKeyListener(new KeyAdapter() { // í‚¤ ì´ë²¤íŠ¸ë¥¼ ëŒ€ê¸°í•˜ë©´ì„œ ë°œìƒì‹œ ì•„ë˜ ì½”ë“œ ì‹¤í–‰
+			public void keyPressed(KeyEvent e) { // í‚¤ë³´ë“œ í‚¤ë¥¼ ëˆŒë €ì„ë•Œ
+				// System.out.println("í‚¤ ëˆŒë €ìŒ!");
+				int code = e.getKeyCode(); // í‚¤ì˜ ì¢…ë¥˜ë¥¼ ìˆ«ìë¡œ ì €ì¥
+				switch (code) {
+				case 32:
+					// System.out.println("ìŠ¤í˜ì´ìŠ¤ë°”");
+					gamePanel.next();
+					break;
+				case 8:
+					// System.out.println("ë°± ìŠ¤í˜ì´ìŠ¤");
+					gamePanel.clear();
+					break;
+				case 10:
+					// System.out.println("ì—”í„°");
+					gamePanel.randomize();
+					break;
+				}
+			}
+		});
+
+		setSize(1200, 800); // ì°½ ì‚¬ì´ì¦ˆ
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // ì°½ì„ ë‹«ì„ë•Œ í”„ë¡œê·¸ë¨ ì¢…ë£Œ
+		setVisible(true); // ë³´ì´ê²Œ í•˜ê¸°
 	}
-	
+
 }

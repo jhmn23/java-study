@@ -3,10 +3,10 @@ package integer;
 public class Doubles {
 
 	public static void main(String[] args) {
-		// ½Ç¼ö º¯¼ö¸¦ ¼±¾ğ
+		// ì‹¤ìˆ˜ ë³€ìˆ˜ë¥¼ ì„ ì–¸
 		Double h = 1.8;
 		
-		System.out.println("³ôÀÌ h´Â "+h+"ÀÔ´Ï´Ù.");
+		System.out.println("ë†’ì´ hëŠ” "+h+"ì…ë‹ˆë‹¤.");
 		
 	}
 

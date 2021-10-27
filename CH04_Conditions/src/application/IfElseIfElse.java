@@ -5,27 +5,27 @@ import java.util.Scanner;
 public class IfElseIfElse {
 
 	public static void main(String[] args) {
-		// IF ¹®
-		Scanner scanner = new Scanner(System.in); //½ºÄ³³Ê »ı¼º
+		// IF ë¬¸
+		Scanner scanner = new Scanner(System.in); //ìŠ¤ìºë„ˆ ìƒì„±
 		
-		System.out.print("»ç°úÀÇ °¹¼ö´Â ? ");
+		System.out.print("ì‚¬ê³¼ì˜ ê°¯ìˆ˜ëŠ” ? ");
 		int apples = scanner.nextInt();
 		
-		System.out.print("¹Ù³ª³ªÀÇ °¹¼ö´Â ? ");
+		System.out.print("ë°”ë‚˜ë‚˜ì˜ ê°¯ìˆ˜ëŠ” ? ");
 		int bananas = scanner.nextInt();
 		
-		scanner.close(); //½ºÄ³³Ê »ç¿ëÈÄ ´İ±â
+		scanner.close(); //ìŠ¤ìºë„ˆ ì‚¬ìš©í›„ ë‹«ê¸°
 		
 		if(apples > bananas) {
-			System.out.println("»ç°ú°¡ ¹Ù³ª³ªº¸´Ù ¸¹À½");
+			System.out.println("ì‚¬ê³¼ê°€ ë°”ë‚˜ë‚˜ë³´ë‹¤ ë§ìŒ");
 		}
-		else if(apples < bananas) { //if¹®ÀÇ Á¶°ÇÀÌ falseÀÏ¶§ ½ÇÇà
-			System.out.println("¹Ù³ª³ª°¡ »ç°úº¸´Ù ¸¹À½");
+		else if(apples < bananas) { //ifë¬¸ì˜ ì¡°ê±´ì´ falseì¼ë•Œ ì‹¤í–‰
+			System.out.println("ë°”ë‚˜ë‚˜ê°€ ì‚¬ê³¼ë³´ë‹¤ ë§ìŒ");
 		}
-		else { //°°À» °æ¿ì
-			System.out.println("°¹¼ö°¡ °°À½");
+		else { //ê°™ì„ ê²½ìš°
+			System.out.println("ê°¯ìˆ˜ê°€ ê°™ìŒ");
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á.");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ.");
 		
 	}
 

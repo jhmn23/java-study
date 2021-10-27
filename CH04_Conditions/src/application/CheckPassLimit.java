@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CheckPassLimit {
 
 	public static void main(String[] args) {
-		// ÆĞ½º¿öµå°¡ Æ²¸®´õ¶óµµ 3¹ø ÀÔ·ÂÇÒ ¼ö ÀÖ´Â ±âÈ¸¸¦ ÁØ´Ù.
-		// ÆĞ½º¿öµå°¡ ¸ÂÀ¸¸é 'Á¢¼Ó½ÂÀÎ' Ãâ·ÂÇÏ°í ¹İº¹¹®À» ºüÁ®³ª¿È
-		// ÆĞ½º¿öµå 3È¸ Æ²¸±½Ã 'Á¢¼Ó°ÅºÎ'
+		// íŒ¨ìŠ¤ì›Œë“œê°€ í‹€ë¦¬ë”ë¼ë„ 3ë²ˆ ì…ë ¥í•  ìˆ˜ ìˆëŠ” ê¸°íšŒë¥¼ ì¤€ë‹¤.
+		// íŒ¨ìŠ¤ì›Œë“œê°€ ë§ìœ¼ë©´ 'ì ‘ì†ìŠ¹ì¸' ì¶œë ¥í•˜ê³  ë°˜ë³µë¬¸ì„ ë¹ ì ¸ë‚˜ì˜´
+		// íŒ¨ìŠ¤ì›Œë“œ 3íšŒ í‹€ë¦´ì‹œ 'ì ‘ì†ê±°ë¶€'
 		
 		final String USER_PASSWORD = "hello";
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		boolean accessOK = false; //ÇÃ·¡±×(flag):ºÒ¸°º¯¼ö·Î »óÅÂ¿¡ µû¶ó Ã³¸®Èå¸§ Á¦¾î
+		boolean accessOK = false; //í”Œë˜ê·¸(flag):ë¶ˆë¦°ë³€ìˆ˜ë¡œ ìƒíƒœì— ë”°ë¼ ì²˜ë¦¬íë¦„ ì œì–´
 		
 		String password = "";
 		
@@ -22,18 +22,18 @@ public class CheckPassLimit {
 			password = scanner.nextLine();
 		
 			if(password.equals(USER_PASSWORD)) {
-				System.out.println("Á¢¼Ó½ÂÀÎ");
+				System.out.println("ì ‘ì†ìŠ¹ì¸");
 				accessOK = true;
 				break;
 			} else {
-				System.out.println("ºñ¹øÀÌ Æ²·È½À´Ï´Ù.");
+				System.out.println("ë¹„ë²ˆì´ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 			}
 		}
 		
 		scanner.close();
 		
 		if (!accessOK) {
-			System.out.println("Á¢¼Ó°ÅºÎ");
+			System.out.println("ì ‘ì†ê±°ë¶€");
 		}
 	}
 

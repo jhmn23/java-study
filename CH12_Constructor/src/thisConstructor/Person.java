@@ -5,7 +5,7 @@ public class Person {
 	private int age;
 
 	public Person() {
-		this("¸ð¸§", 0);
+		this("ëª¨ë¦„", 0);
 	}
 
 	public Person(String name) {

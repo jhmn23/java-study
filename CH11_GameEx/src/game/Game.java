@@ -12,32 +12,32 @@ public class Game {
 	private Scanner scanner = new Scanner(System.in);
 	
 	public void run() {
-		System.out.println("»ï¼¼ÆÇ °¡À§¹ÙÀ§º¸¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("ì‚¼ì„¸íŒ ê°€ìœ„ë°”ìœ„ë³´ë¥¼ ì‹œì‘í•©ë‹ˆë‹¤.");
 		int wins = 0;
 		
 		for(int i=1; i<=3; i++) {
-			System.out.println(i + "¹øÂ° °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+			System.out.println(i + "ë²ˆì§¸ ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 			
-			System.out.print("°¡À§(0),¹ÙÀ§(1),º¸(2)Áß ¼ıÀÚ·Î ¼±ÅÃ : ");
+			System.out.print("ê°€ìœ„(0),ë°”ìœ„(1),ë³´(2)ì¤‘ ìˆ«ìë¡œ ì„ íƒ : ");
 			
 			GameObject ob1 = objects[scanner.nextInt()];
 			GameObject ob2 = objects[random.nextInt(objects.length)];
 			
-			System.out.println("´ç½ÅÀÇ ¼±ÅÃÀº : " + ob1.getName());
-			System.out.println("ÄÄÇ»ÅÍ ¼±ÅÃÀº : " + ob2.getName());
+			System.out.println("ë‹¹ì‹ ì˜ ì„ íƒì€ : " + ob1.getName());
+			System.out.println("ì»´í“¨í„° ì„ íƒì€ : " + ob2.getName());
 			
 			int score = ob1.compare(ob2);
 			wins = wins + score;
 		}
 		
-		System.out.print("ÃÖÁ¾ °á°ú´Â => ");
+		System.out.print("ìµœì¢… ê²°ê³¼ëŠ” => ");
 		
 		if(wins > 0) {
-			System.out.println("´ç½ÅÀÇ ½Â¸®!");
+			System.out.println("ë‹¹ì‹ ì˜ ìŠ¹ë¦¬!");
 		} else if(wins < 0) {
-			System.out.println("´ç½ÅÀÇ ÆĞ¹è!");
+			System.out.println("ë‹¹ì‹ ì˜ íŒ¨ë°°!");
 		} else {
-			System.out.println("ºñ°å½À´Ï´Ù!");
+			System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤!");
 		}
 		
 	}

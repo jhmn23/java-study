@@ -3,12 +3,12 @@ package references;
 public class App {
 
 	public static void main(String[] args) {
-		// ·¹ÆÛ·±½º(ÂüÁ¶,ÁÖ¼Ò°ª) º¯¼ö
-		Person p1 = new Person();	//p1Àº °´Ã¼°¡ »ı¼ºµÈ À§Ä¡ Áï ÁÖ¼Ò°ªÀ» °¡Áø´Ù.
+		// ë ˆí¼ëŸ°ìŠ¤(ì°¸ì¡°,ì£¼ì†Œê°’) ë³€ìˆ˜
+		Person p1 = new Person();	//p1ì€ ê°ì²´ê°€ ìƒì„±ëœ ìœ„ì¹˜ ì¦‰ ì£¼ì†Œê°’ì„ ê°€ì§„ë‹¤.
 		
-		System.out.println(p1); 	//°´Ã¼ÀÇ ÁÖ¼Ò¸¦ Ãâ·Â
+		System.out.println(p1); 	//ê°ì²´ì˜ ì£¼ì†Œë¥¼ ì¶œë ¥
 		
-		Person p2 = p1;				//p2¿¡ p1ÀÇ °ª Áï ÁÖ¼Ò°ªÀ» ³Ñ±è
+		Person p2 = p1;				//p2ì— p1ì˜ ê°’ ì¦‰ ì£¼ì†Œê°’ì„ ë„˜ê¹€
 		
 		System.out.println(p2);
 		

@@ -3,11 +3,11 @@ package application;
 public class Conditions {
 
 	public static void main(String[] args) {
-		// Á¶°Ç¹®
+		// ì¡°ê±´ë¬¸
 		int counter = 0;
 		
 		while(counter <= 10) {
-			System.out.println("Ä«¿îÅÍ : "+counter);
+			System.out.println("ì¹´ìš´í„° : "+counter);
 			
 			counter = counter + 1;
 		}

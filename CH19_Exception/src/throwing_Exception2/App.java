@@ -2,7 +2,7 @@ package throwing_Exception2;
 
 public class App {
 	public static void main(String[] args) {
-		// ¿¹¿ÜÃ³¸®¸¦ ³Ñ±è
+		// ì˜ˆì™¸ì²˜ë¦¬ë¥¼ ë„˜ê¹€
 		Thermostat stat = new Thermostat();
 
 		try {
